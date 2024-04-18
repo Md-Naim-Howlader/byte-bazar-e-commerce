@@ -1,0 +1,47 @@
+.order_summery {
+  position: relative;
+  z-index: 99;
+}
+.order_container {
+  position: sticky;
+  right: 5%;
+  top: 20%;
+  max-width: 100%;
+  z-index: 9999;
+}
+.order_summery .review_btn {
+  text-align: center;
+  padding-top: 20px;
+}
+.order_summery div h3 {
+  font-size: 1.6rem;
+}
+.order_summery div h3 {
+  font-size: 1.6rem;
+}
+.order_summery div p {
+  font-size: 17px;
+  font-weight: bold;
+  margin: 12px 0;
+}
+.order_summery table tr {
+  line-height: 20px;
+}
+
+.order_summery table tr td:first-child {
+  width: 200px;
+}
+
+.order_summery table tr td:last-child {
+  text-align: right;
+}
+.order_summery > div {
+  padding-top: 30px;
+}
+.order_summery span {
+  color: #ff902e;
+}
+.order_summery table tr:last-child {
+  color: #ff902e;
+  font-weight: bold;
+}

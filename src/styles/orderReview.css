@@ -1,0 +1,6 @@
+.review_summary {
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  gap: 20px;
+}
