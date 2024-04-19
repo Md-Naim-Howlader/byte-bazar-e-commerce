@@ -4,11 +4,12 @@ import "../styles/orderReview.css";
 import ReviewProduct from "../components/reviewProduct/ReviewProduct";
 
 import OrderSummery from "../components/Order_Summery/OrderSummery";
-import ContextProvider from "../Context/ContextProvider";
+import { ProductContext } from "../Context/ContextProvider";
 
 const OrderReview = () => {
-  const { addedCartProducts } = useContext(ContextProvider);
+  const { addedCartProducts } = useContext(ProductContext);
   const [separateProducts, setSeparateProducts] = useState([]);
+  console.log(addedCartProducts);
   //filter same id
   const filterdProduct = (array) => {
     return array.reduce((prevProduct, product) => {
