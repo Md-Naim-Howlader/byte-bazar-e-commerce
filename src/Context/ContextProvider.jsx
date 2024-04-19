@@ -1,6 +1,7 @@
 import { useEffect, useReducer } from "react";
-import reducer from "../Reducer/reducer";
-import initialState from "../Reducer/initialState";
+import reducer from "../reducer/reducer";
+import getDataFromStorage from "../utils/getDataFromStorage";
+
 import {
   handleAddToCartProduct,
   handleRemoveToCartProduct,
@@ -10,7 +11,12 @@ import {
 // create context
 import { createContext } from "react";
 import useFetch from "../hooks/useFetch";
+
 export const ProductContext = createContext(null);
+// initail state
+const initialState = {
+  addedCartProducts: getDataFromStorage(),
+};
 
 const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
