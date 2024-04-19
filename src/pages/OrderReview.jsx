@@ -4,10 +4,10 @@ import "../styles/orderReview.css";
 import ReviewProduct from "../components/reviewProduct/ReviewProduct";
 
 import OrderSummery from "../components/Order_Summery/OrderSummery";
-import { ProductContext } from "../Context/productProvider";
+import ContextProvider from "../Context/ContextProvider";
 
 const OrderReview = () => {
-  const { addedCartProducts } = useContext(ProductContext);
+  const { addedCartProducts } = useContext(ContextProvider);
   const [separateProducts, setSeparateProducts] = useState([]);
   //filter same id
   const filterdProduct = (array) => {
