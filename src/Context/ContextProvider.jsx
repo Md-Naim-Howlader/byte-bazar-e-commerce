@@ -12,7 +12,7 @@ import { createContext } from "react";
 import useFetch from "../hooks/useFetch";
 export const ProductContext = createContext(null);
 
-const ProductProvider = ({ children }) => {
+const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
   const { data, loading, error } = useFetch("http://localhost:9000/products");
   useEffect(() => {
@@ -37,4 +37,4 @@ const ProductProvider = ({ children }) => {
   );
 };
 
-export default ProductProvider;
+export default ContextProvider;

@@ -2,7 +2,7 @@ import Swal from "sweetalert2";
 import "../../styles/orderSummery.css";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
-import { ProductContext } from "../../Context/productProvider";
+import { ProductContext } from "../../Context/ContextProvider";
 
 const OrderSummery = ({ btnName, btnPath }) => {
   const { addedCartProducts, handleEmptyCart, dispatch } =

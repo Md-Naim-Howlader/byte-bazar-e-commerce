@@ -1,12 +1,13 @@
+import ContextProvider from "./Context/ContextProvider";
 import MainLayout from "./layout/MainLayout/MainLayout";
-import ProductProvider from "./Context/productProvider";
+
 import "./styles/App.css";
 
 const App = () => {
   return (
-    <ProductProvider>
+    <ContextProvider>
       <MainLayout />
-    </ProductProvider>
+    </ContextProvider>
   );
 };
 

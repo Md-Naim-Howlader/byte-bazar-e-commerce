@@ -4,7 +4,7 @@ import "../../styles/header.css";
 import { FaShoppingCart } from "react-icons/fa";
 import { IoPersonCircleOutline } from "react-icons/io5";
 import { useContext } from "react";
-import { ProductContext } from "../../Context/productProvider";
+import { ProductContext } from "../../Context/ContextProvider";
 
 const Header = () => {
   const { addedCartProducts } = useContext(ProductContext);

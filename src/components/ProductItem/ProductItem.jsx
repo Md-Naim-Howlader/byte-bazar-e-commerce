@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { FaShoppingCart } from "react-icons/fa";
-import { ProductContext } from "../../Context/productProvider";
+import { ProductContext } from "../../Context/ContextProvider";
 
 const ProductItem = ({ productItem }) => {
   const { thumbnail, category, title, description, price, stock, brand } =

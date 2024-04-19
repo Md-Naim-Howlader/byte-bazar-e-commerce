@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { ProductContext } from "../../Context/productProvider";
+import { ProductContext } from "../../Context/ContextProvider";
 
 const ReviewProduct = ({ productItem, allProduct, index }) => {
   const { id, thumbnail, category, title, price, brand } = productItem;

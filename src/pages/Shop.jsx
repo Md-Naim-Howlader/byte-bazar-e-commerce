@@ -5,7 +5,7 @@ import Loading from "../components/loading/Loading";
 import Error from "../components/error/Error";
 import ProductItem from "../components/ProductItem/ProductItem";
 import OrderSummery from "../components/Order_Summery/OrderSummery";
-import { ProductContext } from "../Context/productProvider";
+import { ProductContext } from "../Context/ContextProvider";
 
 const Shop = () => {
   const { data, error, loading } = useContext(ProductContext);
