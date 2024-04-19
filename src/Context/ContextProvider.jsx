@@ -6,7 +6,7 @@ import {
   handleAddToCartProduct,
   handleRemoveToCartProduct,
   handleEmptyCart,
-} from "../Reducer/actions";
+} from "../reducer/actions";
 
 // create context
 import { createContext } from "react";
