@@ -9,7 +9,7 @@ import { ProductContext } from "../Context/ContextProvider";
 const OrderReview = () => {
   const { addedCartProducts } = useContext(ProductContext);
   const [separateProducts, setSeparateProducts] = useState([]);
-  console.log(addedCartProducts);
+
   //filter same id
   const filterdProduct = (array) => {
     return array.reduce((prevProduct, product) => {

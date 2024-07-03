@@ -1,4 +1,4 @@
-import Swal from "sweetalert2";
+// import Swal from "sweetalert2";
 import "../../styles/orderSummery.css";
 import { useNavigate } from "react-router-dom";
 import { useContext } from "react";
@@ -27,14 +27,6 @@ const OrderSummery = ({ btnName, btnPath }) => {
   const handleClick = () => {
     navigate(btnPath);
     btnPath == "/orderNow" && handleEmptyCart(dispatch, []);
-
-    btnPath == "/orderNow" &&
-      Swal.fire({
-        icon: "success",
-        title: "Order Successfully Placed!",
-        text: "Thank you for your purchase.",
-        confirmButtonText: "OK",
-      });
   };
 
   return (

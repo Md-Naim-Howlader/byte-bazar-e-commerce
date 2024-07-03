@@ -20,13 +20,14 @@ const initialState = {
 
 const ContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  const { data, loading, error } = useFetch("https://json-server-for-bytebaazar.onrender.com/products");
+  const { data, loading, error } = useFetch("http://localhost:9000/products"); //https://json-server-for-bytebaazar.onrender.com/products
   useEffect(() => {
     sessionStorage.setItem(
       "addedProducts",
       JSON.stringify(state.addedCartProducts)
     );
   });
+
   const values = {
     addedCartProducts: state.addedCartProducts,
     handleAddToCartProduct,
