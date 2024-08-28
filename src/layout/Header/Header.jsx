@@ -21,12 +21,7 @@ const Header = () => {
               <div className="search_and_orderSummery">
                 <input type="text" placeholder="Type here to Search" />
               </div>
-              <div className="user_auth_icon">
-                <span>
-                  <IoPersonCircleOutline />
-                </span>
-                <p>Md. Naim</p>
-              </div>
+             
               <div
                 className="add_to_cart_icon"
                 onClick={() => navigate("/orderReview")}
